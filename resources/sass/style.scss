@@ -1,0 +1,26 @@
+a {
+    text-decoration: none !important rgba(0, 90, 0, 0.5);
+    transition-duration: .3s;
+    &:hover{
+        transition-duration: .3s;
+        transform: scale(1.01);
+    }
+}
+
+.page-navigation {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    list-style: none;
+    margin-top: 80px;
+    a {
+        padding: 10px;
+        &:hover {
+            background-color: rgba(0, 90, 0, 0.3);
+        }
+        &.active{
+            border-bottom: solid 2px rgba(0, 90, 0, 0.3);
+        }
+    }
+}
